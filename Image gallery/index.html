@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Image Gallery</title>
+</head>
+<body>
+    <div class="main">
+        <div id="nav">
+            <div id="nav-part1">
+                <button id="menu" onclick="openMenu()">Menu</button>
+                
+            </div>
+
+            <div id="nav-part2">
+                <h1>Image Gallery</h1>
+            </div>
+            <div id="nav-part3">
+                <div>
+                    <button id="btn1" >Log In</button>
+                    <button id="btn2">Sign In</button>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar_menu" id="sidebarMenu">
+            <div class="logo">
+            <a href="#">Image Gallery</a>
+            </div>
+
+            <div class="btn_two" onclick="closeMenu()">
+            <label for="check" style="color: grey">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+            </div>
+            <div class="menu">
+            <ul>
+                <li onclick="openMain()">
+                <i class="fa-solid fa-image"></i>
+                <a href="#" >Gallery</a>
+                </li>
+                <li>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <a href="#">Shortcuts</a>
+                </li>
+                <li>
+                <i class="fa-solid fa-photo-film"></i>
+                <a href="#">Exhibits</a>
+                </li>
+                <li>
+                <i class="fa-solid fa-calendar-days"></i>
+                <a href="#">Events</a>
+                </li>
+                <li>
+                <i class="fa-solid fa-store"></i>
+                <a href="#">Store</a>
+                </li>
+                <li>
+                <i class="fa-solid fa-phone"></i>
+                <a href="#">Contact</a>
+                </li>
+                <li>
+                <i class="fa-regular fa-comments"></i>
+                <a href="#">Feedback</a>
+                </li>
+            </ul>
+            </div>
+            
+            <div class="social_media">
+            <ul>
+                <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </ul>
+            </div>
+        </div>
+
+        
+        <div class="dec" id="dec" onclick="closeMenu()">
+            <img  class="img1" src="Image/1.jpg" alt="random image" onclick="openModal('Image/1.jpg')">
+            <img  class="img2"  src="Image/2.jpg" alt="random image" onclick="openModal('Image/2.jpg')">
+            <img  class="img3" src="Image/3.jpg" alt="random image"onclick="openModal('Image/3.jpg')">
+            <img class="img4" src="Image/4.jpg" alt="random image" onclick="openModal('Image/4.jpg')">
+            <img class="img5" src="Image/5.jpg" alt="random image" onclick="openModal('Image/5.jpg')">
+            <img class="img6" src="Image/6.jpg" alt="random image" onclick="openModal('Image/6.jpg')">
+            <img  class="img7" src="Image/7.jpg" alt="random image" onclick="openModal('Image/7.jpg')">
+            <img  class="img8" src="Image/8.jpg" alt="random image" onclick="openModal('Image/8.jpg')">
+            <img  class="img9"  src="Image/9.jpg" alt="random image" onclick="openModal('Image/9.jpg')"> 
+            <img  class="img10" src="Image/10.jpg" alt="random image" onclick="openModal('Image/10.jpg')">
+            <img  class="img11" src="Image/11.jpg" alt="random image" onclick="openModal('Image/11.jpg')">
+            
+        </div>
+       
+       
+       
+        <div id="modal" class="modal" >
+            <button class="nextImage" onclick="nextImage()"><i class="fa-solid fa-angle-right"></i></button>
+            <button class="prevImage" onclick="prevImage()"><i class="fa-solid fa-angle-left"></i></button>
+            
+            <div class="modalC" id="modalC" onclick="closeModal()">
+                <img class="modal-content" id="modalImage"   onclick="closeModal()">
+            </div>
+            
+        </div>
+        
+    </div>
+    <script src="main.js"></script>
+
+
+</body>
+</html>
